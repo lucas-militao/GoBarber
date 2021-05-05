@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts"
+    "dev:server": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "dependencies": {
     "typescript": "^4.2.4"
@@ -16,6 +16,7 @@
     "@typescript-eslint/parser": "^4.22.1",
     "eslint": "^7.25.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "2.22.1",
     "express": "^4.17.1",
     "ts-node-dev": "^1.1.6"
