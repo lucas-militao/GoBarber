@@ -19,6 +19,15 @@
   },
   "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
   "rules": {
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "object": false,
+          "Object": false
+        }
+      }
+    ],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": "warn",
     "prettier/prettier": "error",
