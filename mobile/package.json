@@ -24,7 +24,8 @@
     "react-native-screens": "^3.2.0",
     "react-native-vector-icons": "^8.1.0",
     "styled-components": "^5.1.0",
-    "styled-components-react-native": "^1.0.0"
+    "styled-components-react-native": "^1.0.0",
+    "yup": "^0.29.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -36,6 +37,7 @@
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components": "^5.1.9",
     "@types/styled-components-react-native": "^5.1.1",
+    "@types/yup": "^0.29.0",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
     "babel-jest": "^26.6.3",
