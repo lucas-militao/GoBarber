@@ -3,7 +3,7 @@ import { getCustomRepository } from 'typeorm';
 
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
 import AppError from '../../../shared/errors/AppError';
-import Appointment from '../entities/Appointment';
+import Appointment from '../infra/typeorm/entities/Appointment';
 
 interface Request {
   provider_id: string;
