@@ -5,9 +5,10 @@ import cors from 'cors';
 import 'express-async-errors';
 
 import './database';
-import routes from './routes';
+
 import uploadConfig from './config/upload';
-import AppError from './errors/AppError';
+import routes from './shared/routes';
+import AppError from './shared/errors/AppError';
 
 const app = express();
 
