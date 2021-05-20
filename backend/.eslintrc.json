@@ -26,6 +26,7 @@
       "error",
       { "prefixWithI": "always" }
     ],
+    "no-useless-constructor": "off",
     "@typescript-eslint/camelcase": "off",
     "prettier/prettier": "error",
     "class-methods-use-this": "off",
