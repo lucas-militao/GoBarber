@@ -4,8 +4,10 @@ import AppointmentsRepository from '@modules/appointments/infra/typeorm/reposito
 import CreateAppointmentService from '@modules/appointments/services/CreateAppointmentService';
 import ensureAuthenticated from '@modules/users/infra/http/middleware/ensureAuthenticated';
 import { container } from 'tsyringe';
+import AppointmentsController from '../controller/AppointmentsController';
 
 const appointmentsRouter = Router();
+const appointmentsController = new AppointmentsController();
 
 appointmentsRouter.use(ensureAuthenticated);
 
@@ -15,19 +17,6 @@ appointmentsRouter.use(ensureAuthenticated);
 //   return response.json(appointments);
 // });
 
-appointmentsRouter.post('/', async (request, response) => {
-  const { provider_id, date } = request.body;
-
-  const parseData = parseISO(date);
-
-  const createAppointment = container.resolve(CreateAppointmentService);
-
-  const appointment = await createAppointment.execute({
-    date: parseData,
-    provider_id,
-  });
-
-  return response.json(appointment);
-});
+appointmentsRouter.post('/', appointmentsController.create);
 
 export default appointmentsRouter;
