@@ -1,0 +1,27 @@
+# Testes automatizados
+
+Que a nossa aplicação continue funcionando independete do número de novas funcionalidades e do número de devs no time.
+
+1. Teste unitário (TDD)
+
+Testam funcionalidades específicas da nossa aplicação (precisam ser funções puras).
+
+funções puras: não dependem de outras partes da aplicação. (exemplo: não faz chama à uma API, não tem efeito colateral). Função que não dependem de um serviço externo para funcionar, deve depender de recursos da própria aplicação.
+
+2. Teste integrado
+
+Testam uma funcionalidade completa, passando por várias camadas da aplicação.
+
+Exemplo: Criação de um usuário.
+
+Route -> Controller -> Serviço -> Repositório -> ...
+
+3. Teste E2E
+
+Testes que simulam a ação de um usuário dentro da aplicação.
+
+Exemplo: Teste de interface (Preenchimento de um formulário de login).
+
+# TDD (Test Drive Development)
+
+Consiste em um teste que simula uma funcionalidade que ainda não foi desenvolvida, ou seja, você desenvolve uma funcionalidade e você já sabe qual o comportamento que você espera do mesmo.
